@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Greeting.destroy_all
+Greeting.create([
+  {title:"Hi, good morning?"}, 
+  {title:"Hi, good afternoon?"},
+  {title:"Habari yako?"},
+  {title:"Salut comment ca va?"},
+  {title:"Hola, cómo estás?"}
+])
+
+p "Created #{Greeting.count} Greetings"
