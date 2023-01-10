@@ -21,10 +21,10 @@ function App() {
   
 ReactDOM.render(
  <BrowserRouter>
- <NavLink to="/" role="button">
-   <span>Home</span>
+ <NavLink to="/">
+   <span>Home</span> | 
  </NavLink>
- <NavLink to="/greetings" role="button">
+ <NavLink to="/greetings">
    <span>Greetings</span>
  </NavLink>
   <Provider store={store}>
