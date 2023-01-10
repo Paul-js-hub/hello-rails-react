@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       resources :greetings, only: [:index]
     end
   end
+
+  get '*path', to: 'root#index', via: :all
 end
