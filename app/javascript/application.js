@@ -1,23 +1,11 @@
-// Entry point for the build script in your package.json
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import "@hotwired/turbo-rails"
 import "./controllers"
-import Greetings from './components/Greetings/Greetings';
+import App from './App';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import * as bootstrap from "bootstrap"
-
-function App() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/greetings" element={<Greetings />}/>
-      </Routes>
-    </div>
-  );
-}
   
 ReactDOM.render(
  <BrowserRouter>
